@@ -344,8 +344,137 @@
       }
     }
   </style>
-</head>
 
+<style>
+/* ===== ICON EMPIRE WEBSITE ANIMATIONS ===== */
+
+/* General page animation */
+body {
+    animation: pageLoad 1.2s ease-out;
+}
+
+@keyframes pageLoad {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hero section */
+.hero {
+    animation: heroEnter 1.5s ease-out;
+}
+
+@keyframes heroEnter {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Headings */
+.hero h1,
+.hero h2 {
+    animation: titleEnter 1.4s ease-out;
+}
+
+@keyframes titleEnter {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Buttons */
+button,
+.btn,
+a.button,
+.hero a {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+.btn:hover,
+a.button:hover,
+.hero a:hover {
+    transform: translateY(-5px) scale(1.04);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.35);
+}
+
+/* Founder section */
+.founder-box {
+    animation: founderEnter 1.5s ease-out;
+}
+
+@keyframes founderEnter {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Images */
+img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* Sections appear smoothly */
+section {
+    animation: sectionFade 1.2s ease-out;
+}
+
+@keyframes sectionFade {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navigation */
+nav {
+    animation: navEnter 1s ease-out;
+}
+
+@keyframes navEnter {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+</style>
+
+</head>
 <body>
 
   <!-- NAVIGATION -->
